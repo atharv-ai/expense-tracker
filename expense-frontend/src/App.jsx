@@ -7,7 +7,7 @@ function App() {
   const [page, setPage] = useState("login");
 
   return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center">
+    <div className="min-h-screen bg-slate-50 flex items-center justify-center p-4">
       {page === "login" && <Login setPage={setPage} />}
       {page === "register" && <Register setPage={setPage} />}
       {page === "dashboard" && <Dashboard />}
