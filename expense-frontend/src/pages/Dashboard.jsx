@@ -19,7 +19,7 @@ function Dashboard() {
   const fetchExpenses = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:3000/api/expenses",
+        "https://expense-backend-o79o.onrender.com/api/expenses",
         {
           headers: {
             Authorization: `Bearer ${token}`
