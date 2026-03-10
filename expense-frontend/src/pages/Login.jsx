@@ -8,7 +8,7 @@ function Login({ setPage }) {
   const handleLogin = async () => {
     try {
       const res = await axios.post(
-        "http://localhost:3000/api/auth/login",
+        "https://expense-backend-o79o.onrender.com/api/auth/login",
         { email, password }
       );
 

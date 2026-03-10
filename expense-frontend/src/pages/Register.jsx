@@ -9,7 +9,7 @@ function Register({ setPage }) {
   const handleRegister = async () => {
     try {
       await axios.post(
-        "http://localhost:3000/api/auth/register",
+        "https://expense-backend-o79o.onrender.com/api/auth/register",
         { name, email, password }
       );
 
