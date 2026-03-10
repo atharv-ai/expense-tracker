@@ -37,7 +37,7 @@ function Dashboard() {
   try {
     console.log(id);
     await axios.delete(
-      `http://localhost:3000/api/expenses/${id}`,
+      `https://expense-backend-o79o.onrender.com/api/expenses/${id}`,
       {
         headers: {
           Authorization: `Bearer ${token}`
@@ -55,7 +55,7 @@ function Dashboard() {
   const handleAddExpense = async () => {
     try {
       await axios.post(
-        "http://localhost:3000/api/expenses",
+        "https://expense-backend-o79o.onrender.com/api/expenses",
         { title, amount, category },
         {
           headers: {
